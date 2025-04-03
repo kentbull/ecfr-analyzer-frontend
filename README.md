@@ -12,7 +12,11 @@ And then navigate to [http://localhost:3000](http://localhost:3000) in your brow
 
 You should see something that looks like
 
-![](https://i.ibb.co/YB9MP8Jj/ecfr-frontend-pic.png)
+![this](https://i.ibb.co/YB9MP8Jj/ecfr-frontend-pic.png)
+
+go here if the above image is not working: https://i.ibb.co/YB9MP8Jj/ecfr-frontend-pic.png
+
+
 
 #### Stopping the app
 
