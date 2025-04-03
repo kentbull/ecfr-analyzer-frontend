@@ -14,6 +14,14 @@ You should see something that looks like
 
 ![](https://i.ibb.co/YB9MP8Jj/ecfr-frontend-pic.png)
 
+#### Stopping the app
+
+To stop the app, run:
+
+```shell
+docker compose down
+```
+
 
 ### Developing
 Run the following command on your local environment:
