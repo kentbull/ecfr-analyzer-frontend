@@ -1,4 +1,4 @@
 export const LOGIN_PATH = '/login';
-export const HOME_PATH = '/home';
-export const USER_PATH = '/users';
-export const TODO_PATH = '/todo';
+export const WORD_COUNT_PATH = '/word-counts';
+export const CHANGES_PATH = '/users';
+export const SECTIONS_PATH = '/todo';

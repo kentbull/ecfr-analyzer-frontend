@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 
-const Home = lazy(() => import('@/pages/home'));
+const WordCounts = lazy(() => import('@/pages/word-counts.tsx'));
 
-const Users = lazy(() => import('@/pages/users'));
+const Changes = lazy(() => import('@/pages/changes'));
 
-const Todos = lazy(() => import('@/pages/todos'));
+const Sections = lazy(() => import('@/pages/sections'));
 
-export { Home, Users, Todos };
+export { WordCounts, Changes, Sections };

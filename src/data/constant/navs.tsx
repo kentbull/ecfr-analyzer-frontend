@@ -1,27 +1,27 @@
 import { cloneDeep } from 'lodash';
 import { Link } from 'react-router-dom';
 
-import { HOME_PATH, USER_PATH, TODO_PATH } from './path';
+import { WORD_COUNT_PATH, CHANGES_PATH } from './path';
 import { TypeNavs, TypeRoutes } from './type-navs';
-import { Home, Users, Todos } from '@/pages';
+import { WordCounts, Changes } from '@/pages';
 import { capitalizeFirstLetter } from '@/utils';
 
 const navs: TypeNavs[] = [
   {
-    key: HOME_PATH,
-    label: 'home',
-    element: <Home />,
+    key: WORD_COUNT_PATH,
+    label: 'word-counts',
+    element: <WordCounts />,
   },
   {
-    key: USER_PATH,
-    label: 'user',
-    element: <Users />,
+    key: CHANGES_PATH,
+    label: 'changes',
+    element: <Changes />,
   },
-  {
-    key: TODO_PATH,
-    label: 'todo',
-    element: <Todos />,
-  },
+  // {
+  //   key: SECTIONS_PATH,
+  //   label: 'sections',
+  //   element: <Sections />,
+  // },
 ];
 
 const getRoutes = (arr: TypeRoutes[], nav: TypeNavs, basePath = '') => {

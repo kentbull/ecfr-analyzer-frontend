@@ -34,7 +34,7 @@ type Input = {
   todoName: string;
 };
 
-const Todos: FC = () => {
+const Sections: FC = () => {
   const {
     control,
     handleSubmit,
@@ -54,7 +54,7 @@ const Todos: FC = () => {
     useDeleteTodoMutation();
 
   const todoList = useMemo(() => {
-    if(todos && todos.data) {
+    if (todos && todos.data) {
       return todos?.data.sort((a, b) => {
         if (a.isComplete && !b.isComplete) {
           return 1; // Move 'a' to the end
@@ -163,13 +163,11 @@ const Todos: FC = () => {
               <CircularProgress />
             </div>
           )}
-          {
-            !loadingFetch &&!todoList && (
-              <div className="flex justify-center">
-                <Typography className='text-black'>No data</Typography>
-              </div>
-            )
-          }
+          {!loadingFetch && !todoList && (
+            <div className="flex justify-center">
+              <Typography className="text-black">No data</Typography>
+            </div>
+          )}
           {todoList &&
             todoList.map((todo) => (
               <div key={todo._id} className="flex justify-between items-center">
@@ -207,4 +205,4 @@ const Todos: FC = () => {
   );
 };
 
-export default Todos;
+export default Sections;
