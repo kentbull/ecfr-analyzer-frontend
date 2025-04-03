@@ -10,6 +10,10 @@ VERSIONED_TAG=$(REGISTRY)/$(IMAGE):$(VERSION)
 all: build push
 
 build:
+	@echo "Building the project"
+	@rm -rf dist
+	@pnpm install
+	@pnpm run build
 	@docker build \
 		--platform=linux/amd64,linux/arm64 \
 		--label "version=$(VERSION)" \

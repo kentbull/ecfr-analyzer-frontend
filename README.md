@@ -2,6 +2,20 @@
 
 ### Getting started
 
+To run the eCFR Analyzer along with the API use the Docker compose file as follows:
+
+```shell
+ docker compose up --wait
+ ```
+
+And then navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+
+You should see something that looks like
+
+![](https://i.ibb.co/YB9MP8Jj/ecfr-frontend-pic.png)
+
+
+### Developing
 Run the following command on your local environment:
 
 ```shell
