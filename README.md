@@ -17,6 +17,7 @@ pnpm run dev
 ```
 
 ### Building for production
+
 To build the app for production, run:
 
 ```shell

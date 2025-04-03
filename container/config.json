@@ -1,0 +1,6 @@
+{
+  "environment": "$ISSUER_ENVIRONMENT",
+  "ecfrApi": {
+    "ecfrApiUrl": "$ECFR_API_URL"
+  }
+}
